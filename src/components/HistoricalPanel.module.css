@@ -1,0 +1,60 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle:hover {
+  background-color: #303f9f;
+}
+
+.body {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--surface-alt);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.field select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.field select:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+
+.error {
+  margin: 0;
+  color: var(--text-muted);
+  font-style: italic;
+}

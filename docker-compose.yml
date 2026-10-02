@@ -1,0 +1,10 @@
+services:
+  gemini-oc-front:
+    build: .
+    image: gemini-oc-front:latest
+    container_name: gemini-oc-front
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

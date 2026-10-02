@@ -1,0 +1,40 @@
+[
+  {
+    "Action": "ONBOARDING",
+    "STATUS": "PendingApproval",
+    "DATEDEBUTCONTRAT": "15/04/2025",
+    "FINCONTRAT": "",
+    "IDNIBELIS": "N00380",
+    "TITRE": "M.",
+    "PRENOM": "Antoine",
+    "NOM": "Mercier",
+    "NOMNAISSANCE": "Mercier",
+    "NAISSANCEDATE": "01/01/1990",
+    "COMMUNENAISSANCE": "Lille",
+    "TYPECONTRAT": "CDI",
+    "SERVICE": "Développement",
+    "EMPLOI": "Développeur Backend",
+    "RESPONSABLE": "Sophie Garnier",
+    "DIVISION": "IT",
+    "ROLEHIERARCHIQUE": "COLLABORATEUR",
+    "ETABLISSEMENTLIBE": "MONTPELLIER - 188"
+  },
+  {
+    "Action": "OFFBOARDING",
+    "STATUS": "PendingApproval",
+    "LASTDAY": "10/04/2025",
+    "FINCONTRAT": "30/04/2025",
+    "IDNIBELIS": "N00150",
+    "MATRICULE": "M0150",
+    "FULLNAME": "Marie Laurent",
+    "SHARETO": "Karim Nouri"
+  },
+  {
+    "Action": "UPDATE",
+    "IDNIBELIS": "N00090",
+    "FULLNAME": "Paul Simon",
+    "SIRHATTRIBUTE": "SERVICE",
+    "ADVALUE": "Ventes",
+    "SIRHVALUE": "Commercial"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "Action": "ONBOARDING",
+    "STATUS": "NotSubmitted",
+    "DATEDEBUTCONTRAT": "25/03/2025",
+    "FINCONTRAT": "25/09/2025",
+    "IDNIBELIS": "N00360",
+    "TITRE": "Mme",
+    "PRENOM": "Chloé",
+    "NOM": "Bernard",
+    "NOMNAISSANCE": "Bernard",
+    "NAISSANCEDATE": "12/05/1996",
+    "COMMUNENAISSANCE": "Rennes",
+    "TYPECONTRAT": "CDD",
+    "SERVICE": "RH",
+    "EMPLOI": "Gestionnaire RH",
+    "RESPONSABLE": "Sophie Garnier",
+    "DIVISION": "SUPPORT",
+    "ROLEHIERARCHIQUE": "COLLABORATEUR",
+    "ETABLISSEMENTLIBE": "PARIS - 12"
+  },
+  {
+    "Action": "OFFBOARDING",
+    "STATUS": "NotSubmitted",
+    "LASTDAY": "20/03/2025",
+    "FINCONTRAT": "31/03/2025",
+    "IDNIBELIS": "N00140",
+    "MATRICULE": "M0140",
+    "FULLNAME": "Olivier Roche",
+    "SHARETO": ""
+  }
+]

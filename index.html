@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<div class="content-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gemini-OC</title>
+        <!-- CSS DataTables -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.2.0/css/dataTables.dataTables.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- JS -->
+        <script src="js/script.js"></script>
+        <!-- jQuery doit être chargé en premier -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.datatables.net/2.2.0/js/dataTables.min.js"></script>
+        <!-- Extensions DataTables (Buttons, Excel, PDF) -->
+        <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+    </head>
+
+    <body>
+        <header class="header-background">
+            <div class="header-container">
+                <div class="windmill-container">
+                    <img src="css\logo-icon.svg" alt="Windmill Icon" class="windmill-icon">
+                </div>
+                <h1>Gemini OneClick V2</h1>
+            </div>
+            <nav>
+                <button onclick="loadData('ONBOARDING')">
+                    <i class="fa fa-user-plus"></i> Onboarding
+                </button>
+                <button onclick="loadData('UPDATE')">
+                    <i class="fa fa-edit"></i> Update
+                </button>
+                <button onclick="loadData('OFFBOARDING')">
+                    <i class="fa fa-user-times"></i> Offboarding
+                </button>
+                <button onclick="loadSIRHData()">
+                    <i class="fa fa-database"></i> Data SIRH
+                </button>
+                <button onclick="loadSIData()">
+                    <i class="fa fa-database"></i> Data SI
+                </button>
+                <button onclick="toggleHistoricalSection()">
+                    <i class="fa fa-history"></i> Historique
+                </button>
+            </nav>
+        </header>
+        <div id="message-container">
+            <p>⚠️ Veuillez sélectionner une action pour afficher les données correspondantes.</p>
+        </div>
+        <section id="historical-section" class="historical-container" style="display: none;">
+            <div class="section-header">
+                <i class="fa fa-calendar-alt"></i>
+                <h2>Sélectionnez la période et l'action</h2>
+            </div>
+            <div class="form-group">
+                <label for="action-select">⚡ Sélectionnez l'action </label>
+                <select id="action-select" onchange="updateAction()">
+                    <option value="ONBOARDING">Onboarding</option>
+                    <i class="fa fa-user-plus"></i> Onboarding
+                    <option value="OFFBOARDING">Offboarding</option>
+                    <option value="UPDATE">Update</option>
+                    <option value="DATASIRH">Data SIRH</option>
+                    <option value="DATASI">Data SI</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file-select">📁 Fichiers historiques disponibles </label>
+                <select id="file-select" class="select-modern">
+                    <option value="">-- Sélectionnez un fichier --</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button id="load-data-btn" onclick="loadDataFromFile()">
+                    <i class="fa fa-download"></i> Load
+                </button>
+                <button id="reset-btn" onclick="resetDate()">
+                    <i class="fa fa-undo"></i> Reset
+                </button>
+            </div>
+        </section>
+</div>
+<section>
+    <div id="info-board"class="info-board">
+        <h3 id="info-title"></h3>
+        <p id="info-description"></p>
+    </div>
+    <div id="data-count"style="display: none;"></div>
+    <div id="creation-date"style="display: none;"></div>
+    <div class="table-container">
+        <table id="data-table" style="display: none;">
+            <thead>
+                <tr>
+                    <!-- En-têtes de la table générés dynamiquement -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes de données seront générées ici -->
+            </tbody>
+        </table>
+    </div>
+</section>
+<footer>
+    <p>© VALECO - IT Department</p>
+</footer>
+</body>
+</div>
+
+</html>

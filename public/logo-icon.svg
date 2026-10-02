@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Éolienne">
+  <g fill="#D4AF37">
+    <!-- Mât -->
+    <path d="M30.6 30h2.8l1.6 30h-6z" />
+    <!-- Moyeu -->
+    <circle cx="32" cy="28" r="3.2" fill="#ffffff" />
+    <!-- Pale haut -->
+    <path d="M32 27.2c-.9-6-1.4-12-1-20.2.1-1.3 1.9-1.5 2.3-.3 2.3 7.9 2.9 13.9 1.6 20.1z" />
+    <!-- Pale bas droite -->
+    <path d="M32.7 28.8c5.5 2.6 10.6 5.8 17 11 1 .8.2 2.4-1 2.1-8-1.9-13.4-4.6-18-8.6z" />
+    <!-- Pale bas gauche -->
+    <path d="M31.3 28.8c-5.5 2.6-10.6 5.8-17 11-1 .8-.2 2.4 1 2.1 8-1.9 13.4-4.6 18-8.6z" />
+  </g>
+</svg>

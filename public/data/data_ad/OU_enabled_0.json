@@ -1,0 +1,42 @@
+[
+  { "CreationDate": "16/05/2025 06:00" },
+  {
+    "ID_NIBELIS": "N00105",
+    "MATR": "M0105",
+    "PRENOM": "Emma",
+    "NOM": "Rousseau",
+    "TYPE_CONTRAT": "CDI",
+    "SERVICE": "Communication",
+    "EMPLOI": "Chargée de communication",
+    "DIVISION": "MIXTE",
+    "ROLE_HIERARCHIQUE": "COLLABORATEUR",
+    "DATE_FIN_CONTRAT": "",
+    "ETABLISSEMENT_LIBE": "MONTPELLIER - 188"
+  },
+  {
+    "ID_NIBELIS": "N00201",
+    "MATR": "M0201",
+    "PRENOM": "Julien",
+    "NOM": "Faure",
+    "TYPE_CONTRAT": "CDI",
+    "SERVICE": "Finance",
+    "EMPLOI": "Comptable",
+    "DIVISION": "SUPPORT",
+    "ROLE_HIERARCHIQUE": "COLLABORATEUR",
+    "DATE_FIN_CONTRAT": "15/06/2025",
+    "ETABLISSEMENT_LIBE": "PARIS - 12"
+  },
+  {
+    "ID_NIBELIS": "N00106",
+    "MATR": "M0106",
+    "PRENOM": "Nathan",
+    "NOM": "Girard",
+    "TYPE_CONTRAT": "CDI",
+    "SERVICE": "Projets",
+    "EMPLOI": "Chef de projet senior",
+    "DIVISION": "IT",
+    "ROLE_HIERARCHIQUE": "MANAGER",
+    "DATE_FIN_CONTRAT": "",
+    "ETABLISSEMENT_LIBE": "MONTPELLIER - 188"
+  }
+]

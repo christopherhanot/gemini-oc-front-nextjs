@@ -1,0 +1,46 @@
+.board {
+  position: relative;
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  padding: 15px 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.board:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--indigo);
+}
+
+.description p {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.description strong {
+  color: var(--text);
+}
+
+.historical {
+  color: var(--indigo);
+  font-weight: 700;
+}
+
+.warning {
+  margin: 0.75rem 0;
+  padding: 0.65rem 0.9rem;
+  background: #fff4e5;
+  border: 1px solid #ffd59e;
+  border-radius: 8px;
+  color: #92400e;
+  font-weight: 700;
+}
